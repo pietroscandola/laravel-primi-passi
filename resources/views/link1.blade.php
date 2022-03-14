@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Questo è il Link 1</h1>
+    <h1>Benvenuti sul sito di {{ $name }} {{ $surname }}</h1>
     <a href="{{ route('home')}}">Torna alla Home</a>
 </body>
 

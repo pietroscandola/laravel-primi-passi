@@ -18,7 +18,10 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/link1', function () {
-    return view('link1');
+    $name = "Pietro";
+    $surname = "Scandola";
+
+    return view('link1', compact('name', 'surname'));
 })->name('link1');
 
 Route::get('/link2', function () {
